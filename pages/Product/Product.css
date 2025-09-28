@@ -1,0 +1,191 @@
+/* Product Page */
+.product_page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Product Section */
+.product_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.product_image img {
+  width: 500px;
+  height: 500px; /* Keep the image square */
+  object-fit: cover; /* Ensures the image covers the area */
+  border-radius: 10px;
+}
+
+/* Product Info */
+.product_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Creates consistent spacing */
+}
+
+.product_info h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.product_info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.product_info p {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.old_price {
+  text-decoration: line-through; /* Adds a strikethrough line */
+  color: red; /* Use red to indicate discount */
+  margin-bottom: 10px; /* Consistent spacing */
+}
+
+.product_info button {
+  padding: 12px 25px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product_info button:hover {
+  background-color: rgb(18, 18, 18);
+}
+
+/* Product Review Section */
+.product_review_section {
+  margin-top: 40px;
+}
+
+.product_review_section h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Review Container */
+.review_container {
+  max-height: 200px; /* Limits the height for overflow */
+  overflow-y: auto; /* Enables scrolling for longer reviews */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Adds space before the input field */
+}
+
+/* Review Cards */
+.review_card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between each review */
+}
+
+.review_card p {
+  margin: 0;
+}
+
+.review_card p:first-child {
+  font-weight: bold;
+  color: black;
+}
+
+/* Review Input Section */
+.review_container input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Add space before submit button */
+}
+
+.review_container button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review_container button:hover {
+  background-color: #151515;
+}
+/* Review Input and Button Container */
+.review_input_section {
+  display: flex;
+  align-items: center; /* Align the input and button vertically */
+  gap: 10px; /* Space between the input and button */
+  margin-top: 20px; /* Adds space above the input section */
+}
+
+/* Input Field Styling */
+.review_input_section input[type="text"] {
+  flex: 1; /* Ensures the input takes up available space */
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none; /* Removes the default focus outline */
+  transition: border-color 0.3s ease;
+}
+
+.review_input_section input[type="text"]:focus {
+  border-color: black; /* Highlight border on focus */
+}
+
+/* Submit Button Styling */
+.review_input_section button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth hover transition */
+}
+
+.review_input_section button:hover {
+  background-color: rgb(18, 18, 18); /* Darker color on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.product_info {
+  position: relative; /* To allow positioning of the bookmark icon */
+  padding: 20px;
+}
+
+.bookmark_icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555;
+}
+
+.bookmark_icon:hover {
+  color: #000;
+}

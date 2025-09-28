@@ -1,0 +1,40 @@
+.showing{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+  color: black;
+}
+.showing p{
+  font-weight: 700;
+  margin-left: 50px;
+  font-size: 20px;
+}
+.showing select{
+  width: 100px;
+  border-radius: 10px;
+  height: 30px;
+  margin-right: 50px;
+}
+.explore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.explore button{
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.explore button:hover{
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,60 @@
+.fav-card {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+.fav-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.fav-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.fav-details h3 {
+  margin: 0;
+  color: black;
+}
+
+.fav-details p {
+  margin: 5px 0;
+  color: black;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #d9534f; /* Red color for delete icon */
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  color: #c9302c; /* Darker red on hover */
+}
+
+.deletee-icon {
+  margin-left: 60px;
+  margin-bottom: 20px;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #d9534f; /* Red color for delete icon */
+  cursor: pointer;
+}
+
+.deletee-icon:hover {
+  color: #c9302c; /* Darker red on hover */
+}

@@ -1,0 +1,96 @@
+.news {
+  background-image:linear-gradient(pink,white);
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+/* News Container */
+.news_container {
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Heading */
+.news_container h1 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph */
+.news_container p {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+/* Input and Button Section */
+.press {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Input Style */
+.press input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 70%;
+}
+
+/* Button Style */
+.press button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color:black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.press button:hover {
+  background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .press {
+    flex-direction: column;
+  }
+
+  .press input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .press button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .news_container h1 {
+    font-size: 1.5rem;
+  }
+
+  .news_container p {
+    font-size: 1rem;
+  }
+
+  .press input, .press button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}

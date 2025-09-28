@@ -1,0 +1,98 @@
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+background-image: linear-gradient(pink,white);
+  flex-direction: row; /* Ensures image stays on the right */
+}
+
+/* Left Text Section */
+.left_text {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  max-width: 500px;
+}
+
+.left_text h3 {
+  font-size: 2.2rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.left_text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+  line-height: 1.2;
+}
+
+.left_text button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.left_text button:hover {
+  background-color: rgb(209, 24, 24);
+}
+
+/* Right Image Section */
+.right_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_image img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stack the content for smaller screens */
+    text-align: center;
+  }
+
+  .left_text {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .left_text h1 {
+    font-size: 2.5rem;
+  }
+
+  .right_image img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .left_text h1 {
+    font-size: 2rem;
+  }
+
+  .left_text button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .right_image img {
+    max-width: 70%;
+  }
+}

@@ -1,0 +1,76 @@
+.item{
+  display: flex;
+  flex-direction: column;
+}
+.item:hover{
+  transform: scale(1.05);
+  transition: 0.6s;
+}
+.item img{
+  width: 300px;
+}
+.item p{
+  width: 300px;
+}
+.price{
+  display: flex;
+  width: 100px;
+}
+.new_price{
+  font-weight: 700;
+}
+.cancel{
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 22%; /* Each product takes 22% width, ensuring 4 items fit per row with some spacing */
+  margin-bottom: 20px; /* Adjust this to your desired spacing between rows */
+  color: black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  transition: transform 0.6s; /* Moved transition here for consistency */
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 100%; /* Ensure image fits within the item */
+  max-width: 300px; /* Ensure images don't exceed 300px width */
+  margin: 0 auto; /* Center image horizontally */
+}
+
+.item p {
+  width: 100%; /* Ensure text fits within the item */
+  max-width: 300px; /* Ensure text doesn't exceed 300px width */
+  margin: 0 auto; /* Center text horizontally */
+}
+
+.price {
+  display: flex;
+  justify-content: center; /* Center price container horizontally */
+  width: 100%;
+}
+
+.new_price {
+  font-weight: 700;
+}
+
+.cancel {
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+.popular hr {
+  width: 300px;
+  height: 5px;
+  color: black;
+  background-color: black;
+  border-radius: 30px;
+}
