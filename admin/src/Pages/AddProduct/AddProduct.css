@@ -1,0 +1,84 @@
+.addProduct_container {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hidden{
+  display: none;
+}
+.addProduct_container h1 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.image_upload_section {
+  display: flex;
+  justify-content: center;
+}
+
+.addProduct_container img {
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input_section, .description_section, .button_section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price_section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.price_section input, .select_section select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.select_section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.description_section textarea {
+  height: 100px;
+  resize: none;
+}
+
+.button_section button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button_section button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .addProduct_container {
+    width: 90%;
+  }
+
+  .price_section, .select_section {
+    flex-direction: column;
+  }
+}

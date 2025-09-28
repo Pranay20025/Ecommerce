@@ -1,0 +1,77 @@
+.product-list-container {
+  height: 90vh; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.product-list {
+  overflow-y: auto; /* Enables vertical scrolling */
+  flex-grow: 1; /* Fills the remaining space */
+}
+
+.cartitems-format-main {
+  margin: 20px auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cartitems-format {
+  margin: 10px auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.imgg {
+  width: 100px;
+}
+
+.cross {
+  width: 20px;
+  cursor: pointer;
+  align-self: center;
+}
+.deletee-icon {
+  margin-left: 60px;
+  margin-bottom: 20px;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #d9534f; /* Red color for delete icon */
+  cursor: pointer;
+}
+
+.deletee-icon:hover {
+  color: #c9302c; /* Darker red on hover */
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .cartitems-format-main, .cartitems-format {
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cartitems-format-main, .cartitems-format {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    font-size: 0.8rem;
+  }
+
+  .imgg {
+    width: 80px;
+  }
+
+  .cross {
+    width: 15px;
+  }
+}

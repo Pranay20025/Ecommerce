@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: #f2f0ef;
+}
+.main_section{
+display: flex;
+flex-direction: column;
+}
+.second_main_section{
+  display: flex;
+}
+.sidebar_section{
+  width: 15%;
+  height: 100%;
+}
+.layout_section{
+  width: 85%;
+  height: 100%;
+}

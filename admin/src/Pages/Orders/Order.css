@@ -1,0 +1,110 @@
+.order-list-container {
+  height: 90vh; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.order-list {
+  overflow-y: auto; /* Enables vertical scrolling */
+  flex-grow: 1; /* Fills the remaining space */
+}
+
+.order-format-main {
+  margin: 20px auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.order-format {
+  margin: 10px auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.imgg {
+  width: 100px;
+}
+
+.cross {
+  width: 20px;
+  cursor: pointer;
+  align-self: center;
+}
+.deletee-icon {
+  margin-left: 60px;
+  margin-bottom: 20px;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #d9534f; /* Red color for delete icon */
+  cursor: pointer;
+}
+.selectt {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.selectt:focus {
+  border-color: #007bff; /* Blue outline on focus */
+}
+
+.updatebtn {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  width: 100px;
+  margin-left: 20px;
+}
+
+.updatebtn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.deletee-icon:hover {
+  color: #c9302c; /* Darker red on hover */
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .order-format-main, .order-format {
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-format-main, .order-format {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    font-size: 0.8rem;
+  }
+
+  .imgg {
+    width: 80px;
+  }
+
+  .cross {
+    width: 15px;
+  }
+}
